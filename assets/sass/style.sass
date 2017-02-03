@@ -1,0 +1,134 @@
+$font-stack:    'Ubuntu Light',Helvetica, sans-serif
+$font-bold:	'Ubuntu Medium'
+$font-color: #000000
+$grey: #454545
+$darker-grey: #141414
+$green: #2ee2b5
+$white: #fff
+$p_h: 488/2 
+$p_w: 330/2
+$poster_h: $p_h+px
+$poster_w: $p_w+px
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition: 	$transition
+	-o-transition: 		$transition
+	-ms-transition: 	$transition 
+	transition: 		$transition
+=filter($filter)
+	-webkit-filter: $filter
+	filter: $filter
+
+body
+	font: 100% $font-stack
+	color: $font-color
+	background-color: $darker-grey
+
+a
+	font: 100% $font-stack
+	color: $white
+	text-decoration: none
+
+a:hover
+	color: $white
+	text-decoration: underline
+
+.navbar-aplix
+	font: 100% $font-stack
+	color: $white
+	background-color: $grey !important
+	border-width: 0 0 2.5px
+	border-color: $green
+
+.navbar-header
+	display: inline-block
+	width: 10%
+
+.navbar-brand
+	height: 65px
+	width: 65px
+
+.navbar-brand > img
+	width: 100%
+
+.search-aplix
+	display: inline-block
+	position: absolute
+	float: left
+	max-width: 100%
+	margin: 0.5% auto
+	padding-left: 25%
+
+.account-aplix
+	display: inline-block
+	float: right
+	padding: 1.8% 0
+	font-size: 1.5rem
+
+.container-aplix
+	display: block
+	margin: 6% 4% 0 4%
+
+.container-aplix .row
+	display: block
+	height: 20%
+	width: 100%
+
+.subheading-aplix
+	display: block
+	font: 200% $font-stack
+	text-transform: uppercase
+	text-align: left
+	line-height: 1.0
+	color: $white
+	padding: 1.8% 0
+
+.striposter-aplix
+	display: inline-block
+	max-height: 488px
+	width: 100%
+	overflow: hidden
+
+.poster-aplix
+	display: inline-block
+	height: $poster_h
+	width: $poster_w
+	// background-color: $white
+
+.imageposter-aplix
+	display: block
+	height: $poster_h
+	width: $poster_w
+
+.poster-aplix > img
+	@extend .imageposter-aplix
+	+transition(all 300ms ease-in-out)
+
+.poster-aplix:hover > img
+	+filter(brightness(20%))
+
+.poster-aplix:hover .infoposter-aplix
+	display: inline-block
+
+.infoposter-aplix
+	display: none
+	position: absolute
+	text-align: center
+	width: $poster_w
+	height: $poster_h
+	z-index: 1
+	margin: 0% auto
+	top: 6.7%
+	padding: 3% 0.5%
+	font: $font-bold
+	overflow: hidden
+
+.judulposter-aplix
+	color: $green
+	font-size: 2.2em
+
+.genreposter-aplix,
+.ratingposter-aplix
+	color: $white
+	font-size: 1.2em
+

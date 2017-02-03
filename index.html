@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/gif" href="/assets/img/logo-32.gif">
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<title>APLIX</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/slick.css"/>
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<script src="/assets/js/jquery.js"></script>
+	<script src="/assets/js/jquery.backstretch.min.js"></script>
+	<script src="/assets/js/jquery-ui.min.js"></script>
+	<script src="/assets/js/slick.js"></script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-aplix">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="/assets/img/logo-128.gif">
+      </a>
+	  <h3 style="display: inline-block;">APLIX</h3>
+    </div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="search-aplix">
+			<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+		</div>
+		<div class="account-aplix">
+			<a href="#">Login</a> or <a href="#">Sign Up</a>
+		</div>
+	</div>		
+  </div>
+</nav>
+</header>
+<div class="container-fluid container-aplix">
+	<div class="row">
+		<div class="col-md-12">
+			<span id="newrelease" class="subheading-aplix">New Release</span>
+			<div id="poster-newrelease" class="striposter-aplix">
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/1.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/2.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/3.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/4.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/5.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/6.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/4.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+				<div class="poster-aplix">
+					<img class="imageposter-aplix" src="/assets/img/4.jpg">
+					<div class="infoposter-aplix">
+						<p class="judulposter-aplix">{TITLE}</p>
+						<p class="genreposter-aplix">{GENRE}</p>
+						<p class="ratingposter-aplix">{RATING}</p>
+					</div>
+				</div>
+			</div>
+			<span id="popular" class="subheading-aplix">Popular</span>
+			<div id="poster-popular" class="striposter-aplix">
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+			</div>
+			<span id="genre" class="subheading-aplix">Genre</span>
+			<div id="poster-genre" class="striposter-aplix">
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+				<div class="poster-aplix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.striposter-aplix').slick({
+		  infinite: false,
+		  dots: false,
+		  arrows: true,
+		  slidesToShow: 7,
+		  slidesToScroll: 1
+		  // prevArrow:
+		  // nextArrow:
+		});
+	});
+</script>
+</body>
+</html>
